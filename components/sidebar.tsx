@@ -4,7 +4,7 @@ import { Montserrat } from "next/font/google"
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
+import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon, UserCheck } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const montserrate = Montserrat({weight: "600", subsets:["latin"]})
@@ -45,6 +45,12 @@ const routes = [
         icons: Code,
         href: "/code",
         color: "text-green-700"
+    },
+    {
+        label: "MockMaster",
+        icons: UserCheck,
+        href: "/mockmaster",
+        color: "text-purple-700"
     },
     {
         label: "Settings",
